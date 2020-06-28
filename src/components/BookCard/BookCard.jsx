@@ -3,12 +3,13 @@ import styles from "./BookCard.module.scss";
 
 class BookCard extends Component {
     render () {
-        const {title, author} = this.props.book;
+        const {title, author, coverImg} = this.props.book;
         return (
-            <section>
+            <div className={styles.bookCard}>
+                <img src={coverImg} alt={title} />
                 <h3>{title}</h3>
                 <p>{author}</p>
-            </section>
+            </div>
         );
     }
 }
