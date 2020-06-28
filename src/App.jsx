@@ -7,13 +7,19 @@ import books from "./data/books.js";
 class App extends Component {
   render() {
     return (
-      <section>
+    <>
+      <header>
         <h1>Books App</h1>
+      </header>
+      <main>
         <h2>Books</h2>
-        {books.map(book => {
-          return <BookCard book={book} />
-        })}
-      </section>
+        <section className={styles.content}>
+          {books.map(book => {
+            return <BookCard book={book} />
+          })}
+        </section>
+      </main>
+    </>
     );
   }
 }
