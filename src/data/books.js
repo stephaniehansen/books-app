@@ -12,7 +12,7 @@ const books = [
         author: "John Marsden",
         pages: 304,
         coverImg: "https://www.fictiondb.com/covers/044021985X.jpg"
-    },
+    }
 ];
 
 export default books;
